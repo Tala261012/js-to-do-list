@@ -1,0 +1,64 @@
+{{!
+Це код container файлу для index сторінки,
+в якому міститься код, котрий буде віддаватися по шляху (PATH) - "/"
+}}
+
+{{!-- MY=========================================== --}}
+
+<div class="page">
+	<div class="card">
+		<h1 class="card__title">To-do list</h1>
+
+		<div class="task">
+			<input type="text" class="task__add" placeholder="Введiть задачу...">
+			<button class="task__button">Додати</button>
+		</div>
+
+		<div class="list">
+
+			<div class="list__item">
+				<div class="list__item-text">
+					<div class="list__item-number">1.</div>
+					<div class="list__item-info">Some placeholder content in a paragraph below the heading and date.</div>
+				</div>
+
+				<div class="list__item-buttons">
+					<div class="button-circle">
+						<img src="/svg/todo.svg">
+					</div>
+					<div class="button-circle">
+						<img src="/svg/cansel.svg">
+					</div>
+				</div>
+			</div>
+
+			<div class="list__item list__item--done">
+				<div class="list__item-text">
+					<div class="list__item-number">2.</div>
+					<div class="list__item-info">Some placeholder content in a paragraph below the heading and date.</div>
+				</div>
+				<div class="list__item-buttons">
+					<div class="button-circle button-circle--done">
+						<img src="/svg/done.svg">
+					</div>
+					<div class="button-circle">
+						<img src="/svg/cansel.svg">
+					</div>
+				</div>
+			</div>
+
+		</div>
+
+	</div>
+
+
+</div>
+{{!-- MY=========================================== --}}
+
+
+{{!
+Цей код містить лише те, що буде виводитись в
+
+<body>
+	Адже наш layout/default.hbs має вже структуру HTML
+	}}
