@@ -78,6 +78,8 @@ export class Todo {
         this.#block.append(el)
       })
     }
+
+    this.#input.focus()
   }
 
   static #createTaskElem = (data) => {
@@ -110,6 +112,8 @@ export class Todo {
 
       this.#saveData()
     }
+
+    this.#input.focus()
   }
 
   static #toggleDone = (id) => {
